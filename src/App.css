@@ -45,8 +45,8 @@
 }
 
 .photoset-img {
-  max-width: 300px;
-  max-height: 350px;
+  max-width: 450px;
+  max-height: 450px;
   object-fit: cover;
   padding: 3vw;
 }
