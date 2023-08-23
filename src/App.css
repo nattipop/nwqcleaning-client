@@ -45,9 +45,21 @@
 }
 
 .photoset-img {
-  max-width: 100px;
-  height: 100px;
+  max-width: 300px;
+  max-height: 350px;
   object-fit: cover;
+  padding: 3vw;
+}
+
+.quote-text {
+  padding: 100px 100px 0px;
+  color: var(--gray);
+}
+
+.quote-credit {
+  padding-bottom: 100px;
+  color: var(--gray);
+  opacity: 70%;
 }
 
 #reviews {

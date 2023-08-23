@@ -1,15 +1,26 @@
-import photos from "./photosets.json"
-
+import photos from "./photosets.json";
 const Pictures = () => {
+  const renderQuote = (photoset) => {
+    if(photoset.quote_text) {
+      return (
+        <div>
+          <h2 className="quote-text">"{photoset.quote_text}"</h2>
+          <h3 className="quote-credit">{photoset.quote_credit}</h3>
+        </div>
+      )
+    }
+  }
   const renderPhotos = () => {
     return photos.map((photoset) => {
       return (
         <div key={photoset.id}>
           <div className="row">
-            <img className="col photoset-img" src={photoset.before_url} alt="" />
-            <img className="col photoset-img" src={photoset.after_url} alt="" />
+            <div className="col-3"></div>
+            <img className="col-3 photoset-img" src={photoset.before_url} alt="" />
+            <img className="col-3 photoset-img" src={photoset.after_url} alt="" />
+            <div className="col-3"></div>
           </div>
-          <h2>{photoset.quote_text}</h2>
+          {renderQuote(photoset)}
         </div>
       )
     })
