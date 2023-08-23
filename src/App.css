@@ -44,6 +44,12 @@
   background-color: var(--charcoal);
 }
 
+.photoset-img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 #reviews {
   background-color: var(--gray);
 }
