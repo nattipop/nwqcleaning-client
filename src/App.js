@@ -7,6 +7,7 @@ import WhatToExpect from './WhatToExpect';
 import PHC from './PHC';
 import Pictures from './Pictures';
 import Reviews from './Reviews';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/phc" element={<PHC/>} />
         <Route path="/pictures" element={<Pictures/>} />
         <Route path="/reviews" element={<Reviews/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
   );

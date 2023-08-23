@@ -47,3 +47,13 @@
 #reviews {
   background-color: var(--gray);
 }
+
+#not-found {
+  padding: 50px;
+  background-color: var(--gray);
+  height: 100vh;
+}
+
+#not-found img {
+  padding: 50px;
+}
