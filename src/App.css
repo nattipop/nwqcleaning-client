@@ -51,6 +51,10 @@
   padding: 3vw;
 }
 
+.photoset-row {
+  margin: auto;
+}
+
 .quote-text {
   padding: 100px 100px 0px;
   color: var(--gray);
@@ -74,4 +78,13 @@
 
 #not-found img {
   padding: 50px;
+}
+
+@media (max-width: 900px) {
+  .photoset-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 35px;
+  }
 }

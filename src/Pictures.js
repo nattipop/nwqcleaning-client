@@ -14,7 +14,7 @@ const Pictures = () => {
     return photos.map((photoset) => {
       return (
         <div key={photoset.id}>
-          <div className="row">
+          <div className="row photoset-row">
             <div className="col-3"></div>
             <img className="col-3 photoset-img" src={photoset.before_url} alt="" />
             <img className="col-3 photoset-img" src={photoset.after_url} alt="" />
