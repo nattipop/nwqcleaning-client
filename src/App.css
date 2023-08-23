@@ -1,3 +1,10 @@
+#root {
+  --green: #7eba44;
+  --charcoal: #3c4444;
+  --gray: #dadcde;
+  --light-charcoal: #828486;
+}
+
 .App {
   text-align: center;
 }
@@ -11,4 +18,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#home {
+  background-color: var(--green);
+}
+
+#nav {
+  background-color: var(--charcoal);
+}
+
+#who-we-are {
+  background-color: var(--gray);
+}
+
+#what-to-expect {
+  background-color: var(--light-charcoal);
+}
+
+#phc {
+  background-color: var(--green);
+}
+
+#pictures {
+  background-color: var(--charcoal);
+}
+
+#reviews {
+  background-color: var(--gray);
 }
