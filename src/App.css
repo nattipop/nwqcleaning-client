@@ -84,7 +84,10 @@
   .photoset-img {
     width: 200px;
     height: 250px;
-    object-fit: cover;
     margin-left: 12vw;
+  }
+
+  .quote-text {
+    padding: 70px 70px 0px;
   }
 }
