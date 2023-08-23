@@ -27,8 +27,8 @@ const Pictures = () => {
   }
   return (
     <div id="pictures">
+      <h1 id="pictures-header">Our Work</h1>
       {renderPhotos()}
-      pictures
     </div>
   )
 }

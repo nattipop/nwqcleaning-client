@@ -42,6 +42,12 @@
 
 #pictures {
   background-color: var(--charcoal);
+  padding-bottom: 8vw;
+}
+
+#pictures-header {
+  color: var(--gray);
+  padding: 8vw;
 }
 
 .photoset-img {
@@ -89,5 +95,9 @@
 
   .quote-text {
     padding: 70px 70px 0px;
+  }
+
+  .quote-credit {
+    padding-bottom: 70px;
   }
 }
