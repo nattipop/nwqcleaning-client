@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&display=swap");
+
 #root {
+  width: 100vw;
   --green: #7eba44;
-  --charcoal: #3c4444;
+  --charcoal: #3c4344;
   --gray: #dadcde;
   --light-charcoal: #828486;
+  font-family: "Barlow", sans-serif;
 }
 
 .App {
@@ -26,6 +30,91 @@
 
 #nav {
   background-color: var(--charcoal);
+  width: 100%;
+  overflow: visible;
+}
+
+.row {
+  width: 100%;
+}
+
+#nav a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.nav-phone-number {
+  width: auto;
+  font-size: 2vw;
+  margin: auto;
+  color: var(--gray);
+}
+
+.nav-button {
+  font-size: 22px;
+  text-align: center;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button:hover {
+  text-decoration: underline var(--green) 2px;
+  cursor: pointer;
+}
+
+.nav-spacer {
+  display: flex;
+  width: 36vw;
+}
+
+.logo-small {
+  width: 70px;
+  margin: 10px 10px 10px 20px;
+}
+
+.logo-small:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#dropdownMenuButton {
+  background-color: none;
+  color: var(--gray) !important;
+  font-size: 22px;
+}
+
+#dropdownMenuButton.btn.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  top: 65px;
+  background-color: var(--gray);
+  border-radius: 0px;
+  border: none;
+  min-width: 130px;
+  max-width: 130px;
+  padding: 0px;
+  text-align: center;
+}
+
+.dropdown-item {
+  font-size: 15px;
+  color: var(--charcoal) !important;
+  min-width: 130px;
+  max-width: 130px;
+  padding: 9px;
+}
+
+#green-stripe {
+  width: 100%;
+  height: 5px;
+  background-color: var(--green);
 }
 
 #who-we-are {
@@ -40,21 +129,37 @@
   background-color: var(--green);
 }
 
-#pictures {
+.logo-medium {
+  width: 30vw;
+}
+
+#logo-header-div {
   background-color: var(--charcoal);
+}
+
+#pictures {
+  background-color: var(--light-charcoal);
   padding-bottom: 8vw;
 }
 
 #pictures-header {
   color: var(--gray);
-  padding: 8vw;
+  padding: 8vw 8vw 0vw;
+}
+
+#pictures-sub-header {
+  color: var(--gray);
+  opacity: 70%;
+  font-size: 20px;
+  padding: 0vw 8vw 8vw;
 }
 
 .photoset-img {
-  max-width: 450px;
-  max-height: 450px;
+  min-width: 550px;
+  min-height: 400px;
+  max-height: 700px;
   object-fit: cover;
-  padding: 3vw;
+  padding: 4vw;
 }
 
 .photoset-row {
@@ -88,9 +193,11 @@
 
 @media (max-width: 900px) {
   .photoset-img {
-    width: 200px;
-    height: 250px;
-    margin-left: 12vw;
+    max-width: 200px;
+    min-width: 100px;
+    max-height: 230px;
+    min-height: 50px;
+    /* margin-left: 1vw; */
   }
 
   .quote-text {
