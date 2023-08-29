@@ -20,7 +20,6 @@ function App() {
         <Route path="/phc" element={<PHC/>} />
         <Route path="/pictures" element={<Pictures/>} />
         <Route path="/reviews" element={<Reviews/>} />
-        <Route path="/.well-known/pki-validation/F7B8E390823A7AF9E38FDE7380E615DA.txt" />
         <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
