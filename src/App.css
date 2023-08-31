@@ -38,6 +38,7 @@
   width: 100%;
 }
 
+/* NAV */
 #nav a {
   color: var(--gray);
   text-decoration: none;
@@ -117,26 +118,12 @@
   background-color: var(--green);
 }
 
-#who-we-are {
-  background-color: var(--gray);
-}
-
-#what-to-expect {
-  background-color: var(--light-charcoal);
-}
-
-#phc {
-  background-color: var(--green);
-}
-
 .logo-medium {
   width: 30vw;
 }
+/* NAV END */
 
-#logo-header-div {
-  background-color: var(--charcoal);
-}
-
+/* PAGE HEADERS */
 #pictures {
   background-color: var(--light-charcoal);
   padding-bottom: 8vw;
@@ -149,25 +136,93 @@
 
 #pictures-sub-header {
   color: var(--gray);
-  opacity: 70%;
   font-size: 20px;
   padding: 0vw 8vw 8vw;
 }
 
+#pictures-header-div {
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693372587/IMG_9012_iktkhf.jpg");
+  opacity: 70%;
+  background-size: cover;
+  background-position-y: 48%;
+}
+
+#reviews {
+  background-color: var(--gray);
+}
+
+#reviews-header {
+  color: var(--gray);
+  padding: 8vw 8vw 0vw;
+}
+
+#reviews-sub-header {
+  color: var(--gray);
+  font-size: 20px;
+  padding: 0vw 8vw 8vw;
+}
+
+#reviews-header-div {
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693372535/IMG_8116_chwikr.jpg");
+  opacity: 70%;
+  background-size: cover;
+  background-position-y: 90%;
+}
+
+#who-we-are {
+  background-color: var(--gray);
+}
+
+#wwa-header {
+  color: var(--charcoal);
+  padding: 8vw 8vw 0vw;
+}
+
+#wwa-sub-header {
+  color: var(--charcoal);
+  font-size: 20px;
+  padding: 0vw 8vw 8vw;
+}
+
+#wwa-header-div {
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693497661/Krisitn_Dom_sl2wak.jpg");
+  background-size: cover;
+  background-position-x: -150px;
+  background-position-y: 20%;
+  float: left;
+}
+
+#wwa-text-background {
+  background-color: var(--light-charcoal);
+  width: 40%;
+  float: right;
+}
+
+#what-to-expect {
+  background-color: var(--light-charcoal);
+}
+
+#phc {
+  background-color: var(--green);
+}
+/* PAGE HEADERS END */
+
+/* PICTURES STYLES */
 .photoset-img {
   min-width: 550px;
   min-height: 400px;
   max-height: 700px;
   object-fit: cover;
-  padding: 4vw;
+  padding: 4vw 2vw 4vw;
 }
 
 .photoset-row {
   margin: auto;
+  padding: 0px 50px 0px;
 }
 
 .quote-text {
-  padding: 100px 100px 0px;
+  padding: 80px 80px 0px;
   color: var(--gray);
 }
 
@@ -176,11 +231,9 @@
   color: var(--gray);
   opacity: 70%;
 }
+/* PICTURES STYLES END */
 
-#reviews {
-  background-color: var(--gray);
-}
-
+/* EXTRAS */
 #not-found {
   padding: 50px;
   background-color: var(--gray);
@@ -190,6 +243,7 @@
 #not-found img {
   padding: 50px;
 }
+/* EXTRAS END */
 
 @media (max-width: 900px) {
   .photoset-img {

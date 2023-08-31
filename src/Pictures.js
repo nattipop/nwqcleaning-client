@@ -32,10 +32,10 @@ const Pictures = () => {
   }
   return (
     <div id="pictures">
-      <div id="logo-header-div">
+      <div id="pictures-header-div">
         <div className="">
           <h1 id="pictures-header">Pictures of Our Work</h1>
-          <h3 id="pictures-sub-header">Take a look at some before and after pictures of our work here at Northwest Quality Cleaning</h3>
+          <h3 id="pictures-sub-header">Scroll down to take a look at some before and after pictures of our work here at Northwest Quality Cleaning</h3>
         </div>
       </div>
       {renderPhotos()}
