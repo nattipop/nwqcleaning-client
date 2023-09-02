@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=JetBrains+Mono:wght@300&display=swap");
 
 #root {
   width: 100vw;
@@ -46,9 +46,10 @@
 
 .nav-phone-number {
   width: auto;
-  font-size: 2vw;
+  font-size: 30px;
   margin: auto;
   color: var(--gray);
+  padding: 0px 20px 0px 0px;
 }
 
 .nav-button {
@@ -58,6 +59,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+li.nav-item.nav-button {
+  padding: 6px 12px;
 }
 
 .nav-button:hover {
@@ -121,6 +126,10 @@
 .logo-medium {
   width: 30vw;
 }
+
+#navbarNav {
+  justify-content: right !important;
+}
 /* NAV END */
 
 /* PAGE HEADERS */
@@ -170,32 +179,38 @@
 }
 
 #who-we-are {
-  background-color: var(--gray);
+  background-color: var(--light-charcoal);
+  padding: 10vw 5vw 10vw 0px;
 }
 
-#wwa-header {
-  color: var(--charcoal);
-  padding: 8vw 8vw 0vw;
+.wwa-header {
+  color: var(--gray);
+  font-weight: bold;
+  overflow: visible;
+  font-size: 35px;
 }
 
-#wwa-sub-header {
-  color: var(--charcoal);
+.wwa-sub-header {
+  color: var(--gray);
   font-size: 20px;
-  padding: 0vw 8vw 8vw;
-}
-
-#wwa-header-div {
-  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693497661/Krisitn_Dom_sl2wak.jpg");
-  background-size: cover;
-  background-position-x: -150px;
-  background-position-y: 20%;
-  float: left;
+  overflow: visible;
+  font-family: "JetBrains Mono", monospace;
 }
 
 #wwa-text-background {
-  background-color: var(--light-charcoal);
-  width: 40%;
-  float: right;
+  padding: 0vw 7vw 7vw;
+  text-align: right;
+  min-width: 400px;
+}
+
+.wwa-picture {
+  width: 400px;
+}
+
+#our-purpose-text {
+  padding: 2vw 7vw 7vw;
+  text-align: left;
+  min-width: 400px;
 }
 
 #what-to-expect {
@@ -261,4 +276,47 @@
   .quote-credit {
     padding-bottom: 70px;
   }
+
+  #who-we-are {
+    padding: 0px;
+    width: 100vw;
+  }
+
+  .wwa-header {
+    font-size: 40px;
+    width: inherit;
+  }
+
+  .wwa-sub-header {
+    font-size: 20px;
+    width: inherit;
+  }
+
+  #wwa-text-background {
+    text-align: center;
+    width: inherit;
+    padding: 30px 0px 30px 30px;
+    margin: 0px;
+    order: 2;
+  }
+
+  .wwa-picture {
+    width: 100vw;
+    padding: 10vw;
+    order: 1;
+    height: 80vw;
+    object-fit: cover;
+  }
+
+  #our-purpose-text {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: inherit;
+    padding: 30px 0px 30px 30px;
+  }
+}
+
+nav.navbar {
+  background-color: var(--charcoal) !important;
 }
