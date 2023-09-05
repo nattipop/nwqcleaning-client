@@ -21,8 +21,8 @@ const Nav = () => {
               <li className="nav-item nav-button">
                 <Link to="/">Home</Link>
               </li>
-              <li className="nav-item">
-                <div className="col-sm nav-button dropdown">
+              <li className="nav-item nav-button">
+                <div className="col-sm dropdown">
                   <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                   </button>
@@ -33,8 +33,8 @@ const Nav = () => {
                   </div>
                 </div>
               </li>
-              <li className="nav-item">
-                <div className="col-sm nav-button dropdown">
+              <li className="nav-item nav-button">
+                <div className="col-sm dropdown">
                   <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Our Work
                   </button>

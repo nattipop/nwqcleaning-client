@@ -17,7 +17,7 @@ const WhoWeAre = () => {
       </div>
       <div id="wwa-our-purpose" className="row">
         <div className="col-6">
-          <img className="wwa-picture" src="https://res.cloudinary.com/dawteptkh/image/upload/v1693372550/FullSizeRender_b9yod9.jpg" alt="" />
+          <img className="wwa-picture" id="our-purpose-picture" src="https://res.cloudinary.com/dawteptkh/image/upload/v1693372550/FullSizeRender_b9yod9.jpg" alt="" />
         </div>
         <div id="our-purpose-text" className="col-6">
           <h1 className="wwa-header">Our Purpose:</h1>
