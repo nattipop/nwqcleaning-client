@@ -24,9 +24,32 @@
   color: white;
 }
 
+/* HOME PAGE */
 #home {
-  background-color: var(--green);
+  background-color: var(--gray);
 }
+
+#hero img {
+  margin-left: -1vw;
+  width: 101vw;
+  height: 400px;
+  object-fit: cover;
+  opacity: 70%;
+}
+
+#hero-logo {
+  position: absolute;
+  top: 200px;
+  left: calc(50vw - 100px);
+  rotate: 1.5deg;
+}
+
+#hero-logo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+/* HOME PAGE END */
 
 #nav {
   background-color: var(--charcoal);
@@ -139,7 +162,7 @@ li.nav-item.nav-button {
 
 /* PAGE HEADERS */
 #pictures {
-  background-color: var(--light-charcoal);
+  background-color: var(--gray);
   padding-bottom: 8vw;
 }
 
@@ -166,12 +189,12 @@ li.nav-item.nav-button {
 }
 
 #reviews-header {
-  color: var(--gray);
+  color: var(--charcoal);
   padding: 8vw 8vw 0vw;
 }
 
 #reviews-sub-header {
-  color: var(--gray);
+  color: var(--charcoal);
   font-size: 20px;
   padding: 0vw 8vw 8vw;
 }
@@ -180,7 +203,7 @@ li.nav-item.nav-button {
   background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693372535/IMG_8116_chwikr.jpg");
   opacity: 70%;
   background-size: cover;
-  background-position-y: 90%;
+  background-position-y: 60%;
 }
 
 #who-we-are {
@@ -233,27 +256,35 @@ li.nav-item.nav-button {
 
 /* PICTURES STYLES */
 .photoset-img {
-  min-width: 550px;
-  min-height: 400px;
-  max-height: 700px;
+  min-width: 380px;
+  max-width: 380px;
+  min-height: 350px;
+  max-height: 350px;
   object-fit: cover;
-  padding: 4vw 2vw 4vw;
+  padding: 2vw 2vw 2vw;
 }
 
 .photoset-row {
   margin: auto;
-  padding: 0px 50px 0px;
+  padding: 0px calc(50vw - 380px) 0px;
 }
 
 .quote-text {
-  padding: 80px 80px 0px;
-  color: var(--gray);
+  padding: 50px 80px 0px;
+  color: var(--charcoal);
 }
 
 .quote-credit {
-  padding-bottom: 100px;
-  color: var(--gray);
+  padding-bottom: 50px;
+  color: var(--charcoal);
   opacity: 70%;
+}
+
+.quote-div {
+  width: 60vw;
+  background-color: #7dba4492;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 /* PICTURES STYLES END */
 
@@ -272,18 +303,22 @@ li.nav-item.nav-button {
 @media (max-width: 900px) {
   .photoset-img {
     max-width: 200px;
-    min-width: 100px;
+    min-width: 200px;
     max-height: 230px;
-    min-height: 50px;
+    min-height: 230px;
     /* margin-left: 1vw; */
   }
 
+  .photoset-row {
+    padding: 0px calc(50vw - 200px) 0px;
+  }
+
   .quote-text {
-    padding: 70px 70px 0px;
+    padding: 20px 20px 0px;
   }
 
   .quote-credit {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 
   #who-we-are {

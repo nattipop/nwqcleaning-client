@@ -8,7 +8,7 @@ const Pictures = () => {
   const renderQuote = (photoset) => {
     if(photoset.quote_text) {
       return (
-        <div>
+        <div className="quote-div">
           <h2 className="quote-text">"{photoset.quote_text}"</h2>
           <h3 className="quote-credit">{photoset.quote_credit}</h3>
         </div>
