@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const WhoWeAre = () => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Who We Are";
-  })
+  }, [])
   return (
     <div id="who-we-are">
       <div id="wwa-header-div" className="row">

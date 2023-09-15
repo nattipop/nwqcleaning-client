@@ -29,12 +29,23 @@
   background-color: var(--gray);
 }
 
+#hero {
+  width: 100%;
+}
+
 #hero img {
-  margin-left: -1vw;
-  width: 101vw;
-  height: 400px;
   object-fit: cover;
   opacity: 70%;
+  height: 400px;
+  width: 100%;
+  object-position: 0px -20px;
+}
+
+#hero-text {
+  position: absolute;
+  top: 300px;
+  font-size: 50px;
+  margin: auto;
 }
 
 #hero-logo {
@@ -69,7 +80,7 @@
 
 .nav-phone-number {
   width: auto;
-  font-size: 30px;
+  font-size-adjust: calc(100vw / 8);
   margin: auto;
   color: var(--gray);
   padding: 0px 20px 0px 0px;
@@ -82,6 +93,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dropdown-toggle {
+  height: 70px;
 }
 
 li.nav-item.nav-button {
@@ -160,9 +175,31 @@ li.nav-item.nav-button {
 }
 /* NAV END */
 
+/* FOOTER */
+#footer {
+  background-color: var(--gray);
+  padding: 50px;
+  text-align: left;
+}
+
+#footer-logo {
+  width: 100%;
+  margin: 20px;
+}
+
+#footer-text {
+  margin: 20px;
+  color: var(--charcoal);
+}
+
+.footer-small-col {
+  min-width: 150px;
+}
+/* FOOTER END */
+
 /* PAGE HEADERS */
 #pictures {
-  background-color: var(--gray);
+  background-color: var(--charcoal);
   padding-bottom: 8vw;
 }
 
@@ -185,29 +222,49 @@ li.nav-item.nav-button {
 }
 
 #reviews {
-  background-color: var(--gray);
-}
-
-#reviews-header {
-  color: var(--charcoal);
-  padding: 8vw 8vw 0vw;
+  background-color: var(--charcoal);
 }
 
 #reviews-sub-header {
   color: var(--charcoal);
   font-size: 20px;
-  padding: 0vw 8vw 8vw;
+  width: 100vw;
+  position: absolute;
+  top: 260px;
+}
+
+#reviews-white-box {
+  width: 100%;
+  height: 260px;
+  background-color: white;
+  position: absolute;
 }
 
 #reviews-header-div {
-  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693372535/IMG_8116_chwikr.jpg");
-  opacity: 70%;
-  background-size: cover;
-  background-position-y: 60%;
+  opacity: 60%;
+  width: 100vw;
+  height: 260px;
+  object-fit: cover;
+  position: relative;
+}
+
+#reviews-header {
+  color: var(--charcoal);
+  width: 100vw;
+  position: absolute;
+  top: 200px;
+}
+
+.tm-title {
+  display: none !important;
+}
+
+.go4269172405 {
+  display: none !important;
 }
 
 #who-we-are {
-  background-color: var(--light-charcoal);
+  background-color: var(--charcoal);
   padding: 5vw 5vw 10vw 0px;
 }
 
@@ -219,20 +276,24 @@ li.nav-item.nav-button {
 }
 
 .wwa-sub-header {
-  color: var(--gray);
+  color: var(--charcoal);
   font-size: 20px;
   overflow: visible;
   font-family: "JetBrains Mono", monospace;
 }
 
 #wwa-text-background {
-  padding: 0vw 7vw 7vw;
+  margin: 0vw 7vw 7vw;
+  padding: 3vw;
   text-align: right;
   min-width: 400px;
+  max-width: 500px;
+  background-color: #dadcde9a;
 }
 
 .wwa-picture {
   width: 400px;
+  float: left;
 }
 
 #our-purpose-picture {
@@ -240,11 +301,17 @@ li.nav-item.nav-button {
 }
 
 #our-purpose-text {
-  padding: 2vw 7vw 7vw;
+  margin: 2vw 2vw 2vw;
+  padding: 3vw;
   text-align: left;
   min-width: 400px;
+  max-width: 500px;
+  background-color: #dadcde9a;
 }
 
+#wwa-header-div {
+  width: 100vw;
+}
 #what-to-expect {
   background-color: var(--light-charcoal);
 }
@@ -282,7 +349,7 @@ li.nav-item.nav-button {
 
 .quote-div {
   width: 60vw;
-  background-color: #7dba4492;
+  background-color: #dadcde9a;
   margin-left: 20vw;
   margin-right: 20vw;
 }
@@ -301,11 +368,20 @@ li.nav-item.nav-button {
 /* EXTRAS END */
 
 @media (max-width: 900px) {
+  .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-item {
+    position: inherit;
+    left: calc(50vw - 130px);
+  }
+
   .photoset-img {
     max-width: 200px;
-    min-width: 200px;
+    min-width: 180px;
     max-height: 230px;
-    min-height: 230px;
+    min-height: 200px;
     /* margin-left: 1vw; */
   }
 
@@ -328,19 +404,23 @@ li.nav-item.nav-button {
 
   .wwa-header {
     font-size: 40px;
-    width: inherit;
+    width: 100%;
+    margin: 0px -10px 0px;
+    overflow: hidden;
   }
 
   .wwa-sub-header {
     font-size: 20px;
-    width: inherit;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px -10px 0px;
   }
 
   #wwa-text-background {
     text-align: center;
-    width: inherit;
+    width: 100%;
+    min-width: none;
     padding: 30px 0px 30px 30px;
-    margin: 0px;
     order: 2;
   }
 
@@ -360,7 +440,7 @@ li.nav-item.nav-button {
   #our-purpose-text {
     margin: 0px;
     text-align: center;
-    width: inherit;
+    width: 100%;
     padding: 30px 0px 30px 30px;
   }
 }

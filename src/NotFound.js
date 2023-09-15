@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "Northwest Quality Cleaning | Error";
+  }, [])
   return (
     <div id="not-found">
       <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXg1ZGRtNXkyc3FsMm5yYW5xNDAyYjZheHZhMXQzNDltdTVxMTh0eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3OhXBaoR1tVPW/giphy.gif" alt="" />

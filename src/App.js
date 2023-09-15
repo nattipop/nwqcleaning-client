@@ -8,6 +8,7 @@ import PHC from './PHC';
 import Pictures from './Pictures';
 import Reviews from './Reviews';
 import NotFound from './NotFound';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/reviews" element={<Reviews/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }
