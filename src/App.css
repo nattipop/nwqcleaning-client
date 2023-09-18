@@ -31,34 +31,16 @@
 
 #hero {
   width: 100%;
-}
-
-#hero img {
-  object-fit: cover;
-  opacity: 70%;
   height: 400px;
-  width: 100%;
-  object-position: 0px -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-charcoal);
 }
 
 #hero-text {
-  position: absolute;
-  top: 300px;
   font-size: 50px;
-  margin: auto;
-}
-
-#hero-logo {
-  position: absolute;
-  top: 200px;
-  left: calc(50vw - 100px);
-  rotate: 1.5deg;
-}
-
-#hero-logo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  color: var(--charcoal);
 }
 /* HOME PAGE END */
 
@@ -93,6 +75,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png");
 }
 
 .dropdown-toggle {
@@ -178,13 +169,15 @@ li.nav-item.nav-button {
 /* FOOTER */
 #footer {
   background-color: var(--gray);
-  padding: 50px;
+  padding: 30px;
   text-align: left;
 }
 
 #footer-logo {
   width: 100%;
   margin: 20px;
+  padding: 20px;
+  max-width: 130px;
 }
 
 #footer-text {
@@ -192,8 +185,44 @@ li.nav-item.nav-button {
   color: var(--charcoal);
 }
 
+#footer-text h3 {
+  font-size: 20px;
+}
+
+#footer-text h1 {
+  font-size: 30px;
+}
+
 .footer-small-col {
   min-width: 150px;
+}
+
+.icons {
+  width: 20px;
+  opacity: 70%;
+  margin: 5px;
+  float: right;
+}
+
+.icons:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.icons-div {
+  max-width: 100%;
+  min-width: 110px;
+  position: static;
+  padding-top: 150px;
+}
+
+#google-icon img {
+  margin-right: 2px;
+}
+
+#instagram-icon img {
+  width: 18px;
+  margin-top: 6px;
 }
 /* FOOTER END */
 
@@ -442,6 +471,17 @@ li.nav-item.nav-button {
     text-align: center;
     width: 100%;
     padding: 30px 0px 30px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .icons-div {
+    padding-top: 0px;
+    margin-left: 12px;
+  }
+
+  #footer-logo {
+    margin: 0px;
   }
 }
 
