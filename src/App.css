@@ -42,6 +42,48 @@
   font-size: 50px;
   color: var(--charcoal);
 }
+
+.pic-rev-div .a {
+  position: absolute;
+}
+
+.pic-rev {
+  width: 100vw;
+  padding: 50px;
+}
+
+.pic-rev-div {
+  max-width: 450px;
+  max-height: 300px;
+  margin: auto;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--charcoal);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pic-rev-photo {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 70%;
+}
+
+.pic-rev-text {
+  position: absolute;
+}
+
+.pic-rev-div:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+
+.pic-rev-div:hover .pic-rev-photo {
+  opacity: 30%;
+}
 /* HOME PAGE END */
 
 #nav {
@@ -93,6 +135,7 @@
 
 li.nav-item.nav-button {
   padding: 0px 12px 0px;
+  width: 120px;
 }
 
 .nav-button button:hover {
@@ -260,8 +303,8 @@ li.nav-item.nav-button {
   color: var(--charcoal);
   font-size: 20px;
   width: 100vw;
-  position: absolute;
-  top: 260px;
+  position: relative;
+  top: -170px;
 }
 
 #reviews-white-box {
@@ -282,8 +325,8 @@ li.nav-item.nav-button {
 #reviews-header {
   color: var(--charcoal);
   width: 100vw;
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: -170px;
 }
 
 .tm-title {
@@ -299,30 +342,58 @@ li.nav-item.nav-button {
 }
 
 #wwa-text-background {
-  width: 50vw;
-  padding: 5vw 5px 5vw 10vw;
+  width: 100vw;
+  height: 430px;
+  color: var(--gray);
+  background-color: #3c4344b3;
+  padding: 50px;
+  margin: 50px 0px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+#kristin_and_dom img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+  float: left;
 }
 
 .wwa-header {
-  font-size: 40px;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.about-text-header {
+  margin-top: 30px;
 }
 
 .wwa-sub-header {
-  font-size: 30px;
-}
-
-#wwa-header-div img {
-  width: 50vw;
-  padding: 5vw 10vw 5vw 5px;
+  font-size: 3vw;
 }
 
 #our-purpose-text {
-  width: 50vw;
-  padding: 50px 10vw 10vw 20px;
+  background-color: #3c4344b3;
+  position: relative;
+  top: -75vw;
+  left: 27vw;
+  width: 60vw;
+  padding: 50px;
+  color: var(--gray);
+}
+
+#wwa-our-purpose {
+  height: 70vw;
 }
 
 #wwa-our-purpose img {
-  width: 50vw;
+  margin-left: 100px;
+  width: 70vw;
+  height: 70vw;
+  object-fit: cover;
   padding: 0px 20px 10vw 10vw;
 }
 
@@ -410,42 +481,38 @@ li.nav-item.nav-button {
     padding-bottom: 20px;
   }
 
-  #who-we-are {
-    padding: 0px;
-    width: 100vw;
-    margin: 0px;
+  #wwa-text-background {
+    padding: 10px;
+    height: auto;
+  }
+
+  .about-text-header {
+    font-size: 25px;
+  }
+
+  .about-text-sub {
+    margin-bottom: 30px;
+    font-size: 15px;
+    margin-left: 20px;
   }
 
   .wwa-header {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .wwa-sub-header {
-    font-size: 20px;
+    font-size: 15px;
   }
 
-  #wwa-text-background {
-    text-align: center;
-    width: 100vw;
-    padding: 20px 20px 20px 40px;
-    order: 2;
-  }
-
-  #wwa-header-div img {
-    width: 100vw;
-    padding: 20px;
-  }
-
-  #wwa-our-purpose img {
-    width: 100vw;
-    padding: 20px;
+  #kristin_and_dom img {
+    height: 150px;
+    width: 150px;
   }
 
   #our-purpose-text {
-    margin: 0px;
-    text-align: center;
-    width: 100vw;
-    padding: 20px 20px 20px 40px;
+    padding: 30px;
+    left: 100px;
+    top: -370px;
   }
 
   .dropdown-menu {
@@ -470,6 +537,7 @@ li.nav-item.nav-button {
 
   .dropdown-item:hover {
     cursor: pointer;
+    background-color: var(--light-charcoal);
   }
 
   .dropdown-toggle {
