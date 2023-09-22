@@ -347,7 +347,7 @@ li.nav-item.nav-button {
   color: var(--gray);
   background-color: #3c4344b3;
   padding: 50px;
-  margin: 50px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: left;
   margin-bottom: 100px;
 }
@@ -363,36 +363,43 @@ li.nav-item.nav-button {
 }
 
 .wwa-header {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
 }
 
 .about-text-header {
-  margin-top: 30px;
+  margin-top: 6vw;
+}
+
+.about-text-sub {
+  padding-right: 50px;
+  padding-bottom: 10px;
+  height: auto;
 }
 
 .wwa-sub-header {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #our-purpose-text {
   background-color: #3c4344b3;
   position: relative;
-  top: -75vw;
+  top: -500px;
   left: 27vw;
   width: 60vw;
+  height: auto;
   padding: 50px;
   color: var(--gray);
 }
 
 #wwa-our-purpose {
-  height: 70vw;
+  height: 50vw;
 }
 
 #wwa-our-purpose img {
   margin-left: 100px;
+  position: relative;
   width: 70vw;
-  height: 70vw;
+  height: 50vw;
   object-fit: cover;
   padding: 0px 20px 10vw 10vw;
 }
@@ -455,6 +462,12 @@ li.nav-item.nav-button {
 @media (max-width: 900px) {
   .dropdown-menu {
     display: block;
+    text-align: center;
+  }
+
+  .nav-item {
+    text-align: center;
+    margin: auto;
   }
 
   .nav-phone-number {
@@ -510,9 +523,21 @@ li.nav-item.nav-button {
   }
 
   #our-purpose-text {
-    padding: 30px;
-    left: 100px;
-    top: -370px;
+    margin: 0px;
+    width: 100vw;
+    padding: 20px;
+    top: -60vw;
+    left: 12px;
+  }
+
+  #wwa-our-purpose img {
+    margin: 0px;
+    position: relative;
+    top: -60px;
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;
+    padding: 0px 50px;
   }
 
   .dropdown-menu {
