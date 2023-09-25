@@ -68,8 +68,8 @@
 }
 
 .pic-rev-div {
-  max-width: 450px;
-  max-height: 300px;
+  max-width: 451px;
+  max-height: 301px;
   margin: auto;
   color: var(--green);
   display: flex;
@@ -87,6 +87,10 @@
   object-fit: cover;
   opacity: 70%;
   overflow: hidden;
+}
+
+#review-pic {
+  object-position: 0px;
 }
 
 .pic-rev-text {
@@ -242,6 +246,47 @@ li.nav-item.nav-button {
   margin: 20px;
   padding: 20px;
   max-width: 130px;
+}
+
+.footer-intro {
+  text-align: center;
+}
+
+#design-credit {
+  width: 100vw;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#design-credit a {
+  color: var(--green);
+}
+
+.footer-nav {
+  margin: auto;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list a {
+  color: var(--green);
+}
+
+#footer-headshot {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#personal-cleaners {
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
 }
 
 #footer-text {
@@ -419,7 +464,7 @@ li.nav-item.nav-button {
   position: relative;
   top: -500px;
   left: 27vw;
-  width: 60vw;
+  width: 600px;
   height: auto;
   padding: 50px;
   color: var(--gray);
@@ -432,8 +477,9 @@ li.nav-item.nav-button {
 #wwa-our-purpose img {
   margin-left: 100px;
   position: relative;
-  width: 70vw;
+  width: 650px;
   height: 50vw;
+  max-height: 550px;
   object-fit: cover;
   padding: 0px 20px 10vw 10vw;
 }
@@ -493,7 +539,10 @@ li.nav-item.nav-button {
 }
 /* EXTRAS END */
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
+  .pic-rev {
+    margin: auto;
+  }
   .dropdown-menu {
     display: block;
     text-align: center;
@@ -547,6 +596,34 @@ li.nav-item.nav-button {
     padding: 10px 8vw;
   }
 
+  #our-purpose-text {
+    background-color: #3c4344e6;
+    position: static;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    color: var(--gray);
+    margin: auto;
+    margin-top: 5vw;
+  }
+
+  #wwa-our-purpose {
+    height: auto;
+    display: block;
+    padding-bottom: 5vw;
+  }
+
+  #wwa-our-purpose img {
+    position: static;
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+    opacity: 70%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -100px;
+  }
+
   .about-text-header {
     font-size: 25px;
   }
@@ -568,25 +645,6 @@ li.nav-item.nav-button {
   #kristin_and_dom img {
     height: 150px;
     width: 150px;
-  }
-
-  #our-purpose-text {
-    margin: 0px;
-    width: 100vw;
-    padding: 20px;
-    position: relative;
-    top: -50vh;
-    left: 12px;
-  }
-
-  #wwa-our-purpose img {
-    margin: 0px;
-    position: relative;
-    top: -60px;
-    width: 100vw;
-    height: 50vw;
-    object-fit: cover;
-    padding: 0px 50px;
   }
 
   .dropdown-menu {
@@ -617,6 +675,10 @@ li.nav-item.nav-button {
   .dropdown-toggle {
     display: none;
   }
+
+  .icons-div {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -625,8 +687,40 @@ li.nav-item.nav-button {
     margin-left: 12px;
   }
 
-  #footer-logo {
-    margin: 0px;
+  .footer-small-col {
+    order: 0;
+    display: none;
+  }
+
+  .footer-intro {
+    order: 1;
+  }
+
+  #footer-text {
+    order: 0;
+    width: 100vw;
+  }
+
+  .footer-list {
+    display: none;
+  }
+
+  .icons-div {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+  }
+
+  .footer-credit {
+    order: 4;
+    margin: auto;
+  }
+
+  .footer-row {
+    margin: auto;
   }
 }
 

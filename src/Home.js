@@ -31,7 +31,7 @@ const Home = () => {
               <h2 className="pic-rev-text">Pictures</h2>
             </div>
             <div className="col pic-rev-div" onClick={() => navigate("/reviews")}>
-              <img className="pic-rev-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1695678007/Screen_Shot_2023-09-25_at_4.36.41_PM_yig9gs.png" alt="" />
+              <img className="pic-rev-photo" id="review-pic" src="https://res.cloudinary.com/dawteptkh/image/upload/v1695678007/Screen_Shot_2023-09-25_at_4.36.41_PM_yig9gs.png" alt="" />
               <h2 className="pic-rev-text">Reviews</h2>
             </div>
         </div>
