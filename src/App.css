@@ -2,12 +2,15 @@
 
 #root {
   width: 100vw;
-  --green: #7eba44;
+  --green: #407550;
   --charcoal: #3c4344;
   --gray: #dadcde;
+  --gray-transparent: #dadcde90;
   --light-charcoal: #828486;
   font-family: "Barlow", sans-serif;
 }
+
+/* #3c4344; green #7eba44*/
 
 .App {
   text-align: center;
@@ -35,12 +38,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-charcoal);
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1695413165/IMG_3435_fvy51o.jpg");
+  background-position-y: 48%;
 }
 
 #hero-text {
   font-size: 50px;
   color: var(--charcoal);
+  background-color: var(--gray-transparent);
+  padding: 10px;
+}
+
+#home-about-background {
+  width: 100vw;
+  height: auto;
+  color: var(--gray);
+  background-color: #3c4344e6;
+  padding: 20px 10vw 120px;
+  text-align: left;
 }
 
 .pic-rev-div .a {
@@ -56,13 +71,14 @@
   max-width: 450px;
   max-height: 300px;
   margin: auto;
-  color: var(--gray);
+  color: var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--charcoal);
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 2px var(--green) solid;
+  padding: 0px !important;
 }
 
 .pic-rev-photo {
@@ -70,10 +86,13 @@
   height: 300px;
   object-fit: cover;
   opacity: 70%;
+  overflow: hidden;
 }
 
 .pic-rev-text {
   position: absolute;
+  background-color: var(--gray-transparent);
+  padding: 10px;
 }
 
 .pic-rev-div:hover {
@@ -277,15 +296,27 @@ li.nav-item.nav-button {
   padding-bottom: 8vw;
 }
 
+.pictures-title {
+  padding: 5vw;
+}
+
 #pictures-header {
-  color: var(--gray);
-  padding: 8vw 8vw 0vw;
+  color: var(--charcoal);
+  background-color: var(--gray-transparent);
+  padding: 10px;
+  width: 500px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 #pictures-sub-header {
-  color: var(--gray);
+  color: var(--charcoal);
+  background-color: var(--gray-transparent);
+  padding: 10px;
+  width: 52vw;
+  margin: auto;
   font-size: 20px;
-  padding: 0vw 8vw 8vw;
 }
 
 #pictures-header-div {
@@ -293,40 +324,43 @@ li.nav-item.nav-button {
   opacity: 70%;
   background-size: cover;
   background-position-y: 48%;
+  height: 250px;
 }
 
 #reviews {
   background-color: var(--charcoal);
 }
 
-#reviews-sub-header {
-  color: var(--charcoal);
-  font-size: 20px;
-  width: 100vw;
-  position: relative;
-  top: -170px;
-}
-
-#reviews-white-box {
-  width: 100%;
-  height: 260px;
-  background-color: white;
-  position: absolute;
+.reviews-title {
+  padding: 5vw;
 }
 
 #reviews-header-div {
   opacity: 60%;
   width: 100vw;
-  height: 260px;
+  height: 250px;
   object-fit: cover;
   position: relative;
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1693372535/IMG_8116_chwikr.jpg");
+  background-position-y: 40%;
 }
 
 #reviews-header {
+  font-size: 50px;
   color: var(--charcoal);
-  width: 100vw;
-  position: relative;
-  top: -170px;
+  background-color: var(--gray-transparent);
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+}
+
+#reviews-sub-header {
+  font-size: 20px;
+  color: var(--charcoal);
+  background-color: var(--gray-transparent);
+  padding: 10px;
+  width: 25vw;
+  margin: auto;
 }
 
 .tm-title {
@@ -345,9 +379,9 @@ li.nav-item.nav-button {
   width: 100vw;
   height: 430px;
   color: var(--gray);
-  background-color: #3c4344b3;
+  background-color: #3c4344e6;
   padding: 50px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   text-align: left;
   margin-bottom: 100px;
 }
@@ -381,7 +415,7 @@ li.nav-item.nav-button {
 }
 
 #our-purpose-text {
-  background-color: #3c4344b3;
+  background-color: #3c4344e6;
   position: relative;
   top: -500px;
   left: 27vw;
@@ -441,7 +475,7 @@ li.nav-item.nav-button {
 
 .quote-div {
   width: 60vw;
-  background-color: #dadcde9a;
+  background-color: var(--gray-transparent);
   margin-left: 20vw;
   margin-right: 20vw;
 }
@@ -471,7 +505,17 @@ li.nav-item.nav-button {
   }
 
   .nav-phone-number {
-    padding-right: 50px;
+    padding-right: 30px;
+    padding-left: 0px;
+  }
+
+  .navbar-collapse {
+    display: row;
+    flex-direction: row;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
   }
 
   .photoset-img {
@@ -497,6 +541,10 @@ li.nav-item.nav-button {
   #wwa-text-background {
     padding: 10px;
     height: auto;
+  }
+
+  #home-about-background {
+    padding: 10px 8vw;
   }
 
   .about-text-header {
@@ -526,7 +574,8 @@ li.nav-item.nav-button {
     margin: 0px;
     width: 100vw;
     padding: 20px;
-    top: -60vw;
+    position: relative;
+    top: -50vh;
     left: 12px;
   }
 
@@ -562,7 +611,7 @@ li.nav-item.nav-button {
 
   .dropdown-item:hover {
     cursor: pointer;
-    background-color: var(--light-charcoal);
+    background-color: var(--gray-transparent);
   }
 
   .dropdown-toggle {
@@ -580,6 +629,18 @@ li.nav-item.nav-button {
     margin: 0px;
   }
 }
+
+@media (max-width: 450px) {
+  #our-purpose-text {
+    top: -70vw;
+  }
+}
+/* 
+@media (max-width: 380px) {
+  #our-purpose-text {
+    top: -41vh;
+  }
+} */
 
 nav.navbar {
   background-color: var(--charcoal) !important;

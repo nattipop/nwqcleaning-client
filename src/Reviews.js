@@ -13,10 +13,12 @@ const Reviews = () => {
 
   return (
     <div id="reviews">
-      <div id="reviews-white-box"></div>
-      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1693372535/IMG_8116_chwikr.jpg" alt="" id="reviews-header-div"></img>
-      <h1 id="reviews-header">Reviews</h1>
-      <h1 id="reviews-sub-header">Hear what our clients have to say</h1>
+      <div id="reviews-header-div">
+        <div className="reviews-title">
+          <h1 id="reviews-header">Reviews</h1>
+          <h3 id="reviews-sub-header">Hear what our clients have to say</h3>
+        </div>
+      </div>
     </div>
   )
 }
