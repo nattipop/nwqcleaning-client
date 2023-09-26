@@ -33,13 +33,14 @@
 }
 
 #hero {
-  width: 100%;
+  width: 100vw;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1695413165/IMG_3435_fvy51o.jpg");
-  background-position: 0 58%;
+  background-position-y: 58%;
+  background-repeat: no-repeat;
 }
 
 #hero-text {
@@ -52,6 +53,7 @@
 #home-about-background {
   width: 100vw;
   height: auto;
+  min-height: 370px;
   color: var(--gray);
   background-color: #3c4344e6;
   padding: 20px 10vw 120px;
@@ -475,7 +477,7 @@ li.nav-item.nav-button {
 }
 
 #wwa-our-purpose img {
-  margin-left: 100px;
+  margin-left: 10vw;
   position: relative;
   width: 650px;
   height: 50vw;
@@ -598,6 +600,7 @@ li.nav-item.nav-button {
 
   #home-about-background {
     padding: 10px 8vw;
+    min-height: 100px;
   }
 
   #our-purpose-text {
@@ -750,6 +753,12 @@ li.nav-item.nav-button {
 @media (max-width: 450px) {
   #our-purpose-text {
     top: -70vw;
+  }
+}
+
+@media (min-width: 1270px) {
+  #hero {
+    background-size: 110%;
   }
 }
 /* 
