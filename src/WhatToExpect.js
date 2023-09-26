@@ -6,7 +6,9 @@ const WhatToExpect = () => {
   }, [])
 
   return (
-    <div id="what-to-expect">what to expect</div>
+    <div id="what-to-expect">
+      <h1 id="wte-header">Coming soon</h1>
+    </div>
   )
 }
 

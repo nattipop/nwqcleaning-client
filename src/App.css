@@ -68,8 +68,8 @@
 }
 
 .pic-rev-div {
-  max-width: 451px;
-  max-height: 301px;
+  max-width: 454px;
+  max-height: 304px;
   margin: auto;
   color: var(--green);
   display: flex;
@@ -485,11 +485,15 @@ li.nav-item.nav-button {
 }
 
 #what-to-expect {
-  background-color: var(--light-charcoal);
+  height: 500px;
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#phc {
-  background-color: var(--green);
+#wte-header {
+  font-size: 50px;
 }
 /* PAGE HEADERS END */
 
@@ -678,6 +682,25 @@ li.nav-item.nav-button {
 
   .icons-div {
     padding: 0px;
+  }
+
+  #pictures-header {
+    color: var(--charcoal);
+    background-color: var(--gray-transparent);
+    padding: 10px;
+    width: 80vw;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #pictures-sub-header {
+    display: none;
+  }
+
+  #pictures-header-div {
+    padding: 40px 0px;
+    height: auto;
   }
 }
 

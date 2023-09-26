@@ -37,7 +37,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="row footer-credit">
-          <h3 id="design-credit">Website Designed By <Link>Vita Web Design LLC</Link></h3>
+          <h3 id="design-credit">Website Designed By <Link to="https://www.vitawd.com">Vita Web Design LLC</Link></h3>
         </div>
       </div>
     </div>
