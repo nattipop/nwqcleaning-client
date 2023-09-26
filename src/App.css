@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1695413165/IMG_3435_fvy51o.jpg");
-  background-position-y: 48%;
+  background-position: 0 58%;
 }
 
 #hero-text {
