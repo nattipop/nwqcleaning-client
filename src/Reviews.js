@@ -1,14 +1,21 @@
 import { useEffect } from "react";
 
-const Reviews = () => {
+const Reviews = ({history}) => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Reviews";
     const script = document.createElement("script");
-  
+    
     script.src = "https://widget.trustmary.com/ZYG_O6UaW";
     script.async = true;
     script.id = "reviews-widget"
     document.getElementsByClassName("App")[0].children[1].appendChild(script);
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

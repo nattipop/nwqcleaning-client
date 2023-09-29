@@ -267,6 +267,8 @@ li.nav-item.nav-button {
 
 .footer-nav {
   margin: auto;
+  text-align: right;
+  min-width: 170px;
 }
 
 .footer-list {
@@ -308,11 +310,15 @@ li.nav-item.nav-button {
   min-width: 150px;
 }
 
+.footer-row {
+  margin: auto;
+}
+
 .icons {
   width: 20px;
   opacity: 70%;
   margin: 5px;
-  float: right;
+  float: left;
 }
 
 .icons:hover {
@@ -321,10 +327,7 @@ li.nav-item.nav-button {
 }
 
 .icons-div {
-  max-width: 100%;
-  min-width: 110px;
   position: static;
-  padding-top: 150px;
 }
 
 #google-icon img {
@@ -420,6 +423,7 @@ li.nav-item.nav-button {
 
 #who-we-are {
   background-color: var(--gray);
+  height: auto;
 }
 
 #wwa-text-background {
@@ -470,10 +474,11 @@ li.nav-item.nav-button {
   height: auto;
   padding: 50px;
   color: var(--gray);
+  text-align: justify;
 }
 
 #wwa-our-purpose {
-  height: 50vw;
+  height: 40vw;
 }
 
 #wwa-our-purpose img {
@@ -484,6 +489,60 @@ li.nav-item.nav-button {
   max-height: 550px;
   object-fit: cover;
   padding: 0px 20px 10vw 10vw;
+}
+
+#sponsor-title {
+  color: var(--charcoal);
+  font-size: 30px;
+}
+
+#sponsors-div {
+  padding: 50px;
+  margin-left: 0.5rem;
+}
+
+.sponsor {
+  padding: 20px;
+}
+
+.sponsor-images {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  border: 2px var(--green) solid;
+}
+
+.sponsor-header {
+  color: var(--charcoal);
+  text-decoration: underline var(--green);
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.sponsor-header:hover {
+  text-decoration: underline #25462f;
+}
+
+.sponsor-description {
+  color: var(--charcoal);
+  font-size: 22px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.sponsor-read-more {
+  background-color: var(--green);
+  color: var(--gray);
+  border-radius: 5px;
+  box-shadow: 1px 2px var(--charcoal);
+  border: 1px solid var(--charcoal);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.sponsor-read-more:hover {
+  background-color: #25462f;
 }
 
 #what-to-expect {
@@ -646,7 +705,7 @@ li.nav-item.nav-button {
   }
 
   .wwa-sub-header {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #kristin_and_dom img {
@@ -705,39 +764,26 @@ li.nav-item.nav-button {
     padding: 40px 0px;
     height: auto;
   }
+
+  #sponsors-div {
+    padding: 20px;
+  }
 }
 
-@media (max-width: 600px) {
-  .icons-div {
-    padding-top: 0px;
-    margin-left: 12px;
-  }
-
-  .footer-small-col {
-    order: 0;
-    display: none;
-  }
-
+@media (max-width: 635px) {
   .footer-intro {
-    order: 1;
+    order: 0;
+    min-width: 100vw;
+    margin-left: -30px;
   }
 
   #footer-text {
-    order: 0;
-    width: 100vw;
-  }
-
-  .footer-list {
-    display: none;
-  }
-
-  .icons-div {
     order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     width: 100vw;
+  }
+
+  .footer-nav {
+    order: 1;
   }
 
   .footer-credit {
@@ -747,6 +793,12 @@ li.nav-item.nav-button {
 
   .footer-row {
     margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-nav {
+    text-align: left;
   }
 }
 
@@ -761,12 +813,6 @@ li.nav-item.nav-button {
     background-size: 110%;
   }
 }
-/* 
-@media (max-width: 380px) {
-  #our-purpose-text {
-    top: -41vh;
-  }
-} */
 
 nav.navbar {
   background-color: var(--charcoal) !important;

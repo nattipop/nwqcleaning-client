@@ -1,8 +1,14 @@
 import { useEffect } from "react";
 import photos from "./photosets.json";
-const Pictures = () => {
+const Pictures = ({history}) => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Pictures";
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    }
   })
 
   const renderQuote = (photoset) => {
