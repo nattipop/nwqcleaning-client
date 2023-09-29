@@ -1,15 +1,9 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
-const WhoWeAre = ({history}) => {
+const WhoWeAre = () => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Who We Are";
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-    });
-    return () => {
-      unlisten();
-    }
+    window.scrollTo(0, 0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

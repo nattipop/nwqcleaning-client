@@ -1,15 +1,10 @@
 import { useEffect } from "react";
 import photos from "./photosets.json";
-const Pictures = ({history}) => {
+const Pictures = () => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Pictures";
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-    });
-    return () => {
-      unlisten();
-    }
-  })
+    window.scrollTo(0, 0);
+  }, [])
 
   const renderQuote = (photoset) => {
     if(photoset.quote_text) {

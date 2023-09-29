@@ -3,16 +3,11 @@ import { useNavigate } from "react-router";
 
 const reviewsWidget = document.getElementById("reviews-widget");
 
-const Home = ({history}) => {
+const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Home";
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-    });
-    return () => {
-      unlisten();
-    }
+    window.scrollTo(0, 0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewsWidget])
 

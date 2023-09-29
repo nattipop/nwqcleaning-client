@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Reviews = ({history}) => {
+const Reviews = () => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Reviews";
     const script = document.createElement("script");
@@ -9,12 +9,7 @@ const Reviews = ({history}) => {
     script.async = true;
     script.id = "reviews-widget"
     document.getElementsByClassName("App")[0].children[1].appendChild(script);
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-    });
-    return () => {
-      unlisten();
-    }
+    window.scrollTo(0, 0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
