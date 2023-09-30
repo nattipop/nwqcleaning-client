@@ -22,7 +22,7 @@ const Home = () => {
             <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1693497661/Krisitn_Dom_sl2wak.jpg" alt="" />
           </div>
           <h1 className="wwa-header about-text-header">We're Kristin & Domanic Wiesner,</h1>
-          <h1 className="wwa-sub-header about-text-sub">the owners of Northwest Quality Cleaning LLC. We're so grateful to get to work together as husband and wife, with this being our full time career, and supporting us as we work towards building our future together, all by God's grace!</h1>
+          <h1 className="wwa-sub-header about-text-sub">Owners of Northwest Quality Cleaning LLC. We are so grateful to get to work together as husband and wife. This is our full time career, and it has supported us as we work towards building our future together by God's grace!</h1>
         </div>
       </div>
       <div id="pictures-reviews">
