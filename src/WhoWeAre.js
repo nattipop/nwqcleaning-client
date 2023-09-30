@@ -25,7 +25,7 @@ const WhoWeAre = () => {
         </div>
         <div id="our-purpose-text">
           <h1 className="wwa-header">Our Purpose:</h1>
-          <h1 className="wwa-sub-header">We're here to serve you, make your life easier, and take the time to do the things you don't have time or maybe the capability to do anymore. We are dedicated to our quality towards every client, whether a one time or continual weekly cleaning, we will serve you and your home to the best of our abilities, giving you confidence and peace of mind, with your decision to take us on as your personal cleaners!</h1>
+          <h1 className="wwa-sub-header">We're here to serve you, make your life easier, and do the things you don't have the time or ability to do anymore. We are dedicated to our quality towards every client we will serve you and your home to the best of our abilities, giving you confidence and peace of mind!</h1>
         </div>
       </div>
       <div id="sponsors-div" className="row">
