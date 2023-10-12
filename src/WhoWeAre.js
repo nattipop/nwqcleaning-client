@@ -31,7 +31,7 @@ const WhoWeAre = () => {
       <div id="sponsors-div" className="row">
         <h1 id="sponsor-title">By choosing us you are also helping to support:</h1>
         <div id="sponsor-phc" className="col sponsor">
-          <img className="sponsor-images" src="https://scontent.feau1-1.fna.fbcdn.net/v/t39.30808-6/241627138_4316546101756663_1001089809806014965_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=UKOpiIpXtAgAX86530l&_nc_oc=AQm8E9lmCoEcfq-RhmCe3AbsprmQg0HnIfOGCL2fujU5LPmWtKffGRciwz9g8nEAgSE&_nc_ht=scontent.feau1-1.fna&oh=00_AfAIuK2yqInBNzstVJrtAj-Lb_Q_w2xZ7yIKdyg0Ahaiaw&oe=651A234F" alt="PHC" />
+          <img className="sponsor-images" src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/241627138_4316546101756663_1001089809806014965_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-UnFUSTtcywAX_7aB9d&_nc_oc=AQlp8Cbp25zlSCU8uedn_KbimoaKj1BQVqylpa36qXgSPH_ux3h9jVwAq0t02seBd3E&_nc_ht=scontent-msp1-1.xx&oh=00_AfBOKAG6JqZepROZbPSX90r4AO8C1cmEG9FN8fTio2WWpw&oe=652DE9CF" alt="PHC" />
           <Link to="https://www.phcricelake.org/"><h1 className="sponsor-header">Pregnancy Help Center of Rice Lake</h1></Link>
           <h3 className="sponsor-description"><span>A percentage of the money we make goes toward PHC of Rice Lake. <br></br><br></br>From their website:<br></br> "Pregnancy Help Center of Rice Lake opened its doors to the community in 2001. This is a place where all our welcome regardless of race, economic status, age, marital status, or gender. Our client advocates and staff are here to meet with you about pregnancy, relationships, parenting options, and more."</span></h3>
           <a href="https://www.phcricelake.org" className="sponsor-read-more">Read More Here</a>
