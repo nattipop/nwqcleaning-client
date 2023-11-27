@@ -60,6 +60,29 @@
   text-align: left;
 }
 
+#wte-banner-home {
+  background-color: var(--green);
+  color: white;
+  padding: 30px;
+}
+
+#wte-banner-header {
+  font-size: 30px;
+}
+
+#wte-banner-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: white;
+  color: var(--charcoal);
+  font-size: 18px;
+}
+
+#wte-banner-button:hover {
+  background-color: #f1f1f1;
+}
+
 .pic-rev-div .a {
   position: absolute;
 }
@@ -253,6 +276,7 @@ li.nav-item.nav-button {
 
 .footer-intro {
   text-align: center;
+  margin-left: -50px;
 }
 
 #design-credit {
@@ -688,6 +712,12 @@ li.nav-item.nav-button {
 #not-found img {
   padding: 50px;
 }
+
+.instagram-header {
+  font-size: 25px;
+  color: var(--charcoal);
+  margin: 20px;
+}
 /* EXTRAS END */
 
 @media (max-width: 990px) {
@@ -933,4 +963,9 @@ li.nav-item.nav-button {
 
 nav.navbar {
   background-color: var(--charcoal) !important;
+}
+
+a {
+  color: var(--charcoal);
+  text-decoration: none;
 }

@@ -1,21 +1,13 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
-
-const reviewsWidget = document.getElementById("reviews-widget");
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Home";
     window.scrollTo(0, 0);
-
-    let cssLink = document.createElement("link");
-    cssLink.href = "./Instagram.css";
-    cssLink.rel = "stylesheet";
-    cssLink.type = "text/css";
-    document.getElementById("NWQ-insta").contentDocument.head.appendChild(cssLink)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [reviewsWidget])
+  }, [])
 
   return (
     <div id="home">
@@ -31,6 +23,10 @@ const Home = () => {
           <h1 className="wwa-sub-header about-text-sub">Owners of Northwest Quality Cleaning LLC. We are so grateful to get to work together as husband and wife. This is our full time career, and it has supported us as we work towards building our future together by God's grace!</h1>
         </div>
       </div>
+      <div id="wte-banner-home">
+        <h1 id="wte-banner-header">Interested in doing business with us?</h1>
+        <button id="wte-banner-button"><Link to="/what-to-expect">Here's what to expect</Link></button>
+      </div>
       <div id="pictures-reviews">
         <div className="row pic-rev">
             <div className="col pic-rev-div" onClick={() => navigate("/pictures")}>
@@ -44,7 +40,8 @@ const Home = () => {
         </div>
       </div>
       <div id="instagram-section">
-        <iframe id="NWQ-insta" title="n.w.q_cleaning embed" src='https://www.juicer.io/api/feeds/n-w-q_cleaning/iframe' width='80%' height='400' style={{display:"block",margin:"0 auto"}}></iframe>
+        <h1 className="instagram-header">New from our instagram:</h1>
+        <iframe title="instagram-iframe" src='https://widget-eb7893c9183c4683b114f58300fe30cd.elfsig.ht' width='80%' height='300' frameborder='0'></iframe>
       </div>
     </div>
   )
