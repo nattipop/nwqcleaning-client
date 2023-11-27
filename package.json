@@ -43,8 +43,5 @@
   "engines": {
     "node": "v16.14.2",
     "npm": "9.6.2"
-  },
-  "devDependencies": [
-    "@babel/plugin-proposal-private-property-in-object"
-  ]
+  }
 }

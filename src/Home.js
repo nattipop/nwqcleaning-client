@@ -8,6 +8,12 @@ const Home = () => {
   useEffect(() => {
     document.title = "Northwest Quality Cleaning | Home";
     window.scrollTo(0, 0);
+
+    let cssLink = document.createElement("link");
+    cssLink.href = "./Instagram.css";
+    cssLink.rel = "stylesheet";
+    cssLink.type = "text/css";
+    document.getElementById("NWQ-insta").contentDocument.head.appendChild(cssLink)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewsWidget])
 
@@ -37,7 +43,9 @@ const Home = () => {
             </div>
         </div>
       </div>
-      <div id="instagram-section"></div>
+      <div id="instagram-section">
+        <iframe id="NWQ-insta" title="n.w.q_cleaning embed" src='https://www.juicer.io/api/feeds/n-w-q_cleaning/iframe' width='80%' height='400' style={{display:"block",margin:"0 auto"}}></iframe>
+      </div>
     </div>
   )
 }
