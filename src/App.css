@@ -83,6 +83,10 @@
   background-color: #f1f1f1;
 }
 
+#instagram-iframe {
+  height: 300px;
+}
+
 .pic-rev-div .a {
   position: absolute;
 }
@@ -916,6 +920,10 @@ li.nav-item.nav-button {
 @media (max-width: 635px) {
   #wte-all-steps {
     padding: 0px;
+  }
+
+  #instagram-iframe {
+    height: 400px;
   }
 
   .footer-intro {

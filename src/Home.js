@@ -41,7 +41,7 @@ const Home = () => {
       </div>
       <div id="instagram-section">
         <h1 className="instagram-header">New from our instagram:</h1>
-        <iframe title="instagram-iframe" src='https://widget-eb7893c9183c4683b114f58300fe30cd.elfsig.ht' width='80%' height='300' frameborder='0'></iframe>
+        <iframe id="instagram-iframe" title="instagram-iframe" src='https://widget-eb7893c9183c4683b114f58300fe30cd.elfsig.ht' width='80%' frameBorder='0'></iframe>
       </div>
     </div>
   )
