@@ -442,6 +442,11 @@ li.nav-item.nav-button {
   margin: auto;
 }
 
+#reviews-box {
+  padding: 50px;
+  text-align: center;
+}
+
 .tm-title {
   display: none !important;
 }
